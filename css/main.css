@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+:root {
+  --bg-color: #fff;
+  --body: #f2f2f2;
+  --color: #111517;
+}
+
+.dark {
+  --bg-color: #2b3844;
+  --body: #202c36;
+  --color: #fff;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Nunito", sans-serif;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: var(--body);
+}
+
+.container {
+  max-width: 1390px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+.main {
+  padding: 24px 0;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  background-color: var(--bg);
+}
+
+.main__text {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 24px;
+  color: var(--color);
+}
+
+.main__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__btn {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color);
+  border: none;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  background-color: transparent;
+}
+.main__btn::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url(../img/moon.svg);
+  background-repeat: no-repeat;
+}
+
+.form__item {
+  -webkit-box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.03);
+          box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.03);
+  background-color: var(--bg);
+  border-radius: 5px;
+}
+
+.form__conten {
+  padding: 24px 91px 46px 24px;
+}
+
+.form__title {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 144%;
+  color: var(--color);
+  margin-bottom: 16px;
+}
+
+.form__text {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 114%;
+  color: var(--color);
+  margin-bottom: 8px;
+}
+
+.form__number {
+  font-weight: 300;
+}
+
+.form {
+  padding-top: 48px;
+}
+
+.form__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}/*# sourceMappingURL=main.css.map */
